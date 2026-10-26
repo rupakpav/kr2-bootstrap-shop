@@ -3,35 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-  >
+  <title>Главная — Периферия</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
-  <title>Главная — Bootstrap Shop</title>
 </head>
-<body>
-  <header class="bg-primary text-white py-4">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-8">
-        <h1 class="h3 mb-1">Bootstrap Shop</h1>
-        <p class="mb-0 opacity-75">
-          Учебный интернет-магазин на Bootstrap
-        </p>
-      </div>
-
-      <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
-        <span class="badge bg-light text-primary">
-          КР №2
-        </span>
-      </div>
-    </div>
-  </div>
+<body class="bg-light">
+<header class="bg-primary text-white py-4">
+  <div class="container"><div class="row align-items-center g-3">
+    <div class="col-12 col-md-8"><p class="h3 mb-1">Периферия</p><p class="mb-0">Компьютерные аксессуары для учёбы и работы</p></div>
+    <div class="col-12 col-md-4 text-md-end"><span class="badge bg-light text-primary">Для вашего рабочего места</span></div>
+  </div></div>
 </header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Основная навигация">
   <div class="container">
-    <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+    <a class="navbar-brand" href="index.html">Периферия</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto">
@@ -39,10 +24,11 @@
         <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
         <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
         <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.html">Доставка и контакты</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Дополнительно</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Дополнительно</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="catalog.html">Каталог товаров</a></li>
             <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
             <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
           </ul>
@@ -54,136 +40,87 @@
 <main>
   <section class="container my-5">
     <div class="row align-items-center g-4">
-      <div class="col-12 col-lg-6">
-        <h2 class="display-5 fw-bold">
-          Учебный каталог товаров на Bootstrap
-        </h2>
-        <p class="lead text-muted">
-          Проект демонстрирует использование Bootstrap-сетки,
-          адаптивных колонок и базовых utility-классов.
-        </p>
-        <a class="btn btn-primary btn-lg" href="catalog.html">
-          Перейти в каталог
-        </a>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="placeholder-box p-5 bg-light border rounded text-center">
-          <p class="mb-0 text-muted">
-            Здесь может быть изображение, баннер или промо-блок.
-          </p>
-        </div>
-      </div>
+      <div class="col-12 col-lg-6"><h1 class="display-5 fw-bold">Удобное рабочее место начинается с деталей</h1><p class="lead text-muted">Клавиатуры, мыши и наушники для занятий и повседневных задач. Сравните характеристики и выберите подходящую модель.</p><a class="btn btn-primary btn-lg" href="catalog.html">Перейти в каталог</a></div>
+      <div class="col-12 col-lg-6"><div class="placeholder-box p-4 bg-white border rounded">
+        <p class="text-primary fw-semibold mb-3">9 моделей в трёх категориях</p>
+        <div class="d-grid gap-3"><a class="d-flex justify-content-between align-items-center gap-2 text-decoration-none border-bottom pb-2" href="catalog.html#keyboards-pane"><span class="fs-5">Клавиатуры</span><span class="badge bg-primary">3 модели</span></a><a class="d-flex justify-content-between align-items-center gap-2 text-decoration-none border-bottom pb-2" href="catalog.html#mice-pane"><span class="fs-5">Мыши</span><span class="badge bg-primary">3 модели</span></a><a class="d-flex justify-content-between align-items-center gap-2 text-decoration-none border-bottom pb-2" href="catalog.html#headphones-pane"><span class="fs-5">Наушники</span><span class="badge bg-primary">3 модели</span></a></div>
+      </div></div>
     </div>
   </section>
   <section class="container my-5">
-  <h2 class="text-center mb-4">Преимущества проекта</h2>
-
-  <div class="row g-4">
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Bootstrap-сетка</h3>
-        <p class="mb-0 text-muted">
-          Страница построена на 12-колоночной системе Bootstrap.
-        </p>
-      </div>
+    <h2 class="text-center mb-4">Удобный выбор</h2>
+    <div class="row g-4">
+      <div class="col-12 col-md-4"><div class="p-4 border rounded h-100 bg-white"><h3 class="h5">Удобный каталог</h3><p class="mb-0 text-muted">Товары разделены по категориям. Переключайте вкладки и сравнивайте модели.</p></div></div>
+      <div class="col-12 col-md-4"><div class="p-4 border rounded h-100 bg-white"><h3 class="h5">На любом экране</h3><p class="mb-0 text-muted">Каталог удобно просматривать с телефона, планшета или компьютера.</p></div></div>
+      <div class="col-12 col-md-4"><div class="p-4 border rounded h-100 bg-white"><h3 class="h5">Выбранный товар в заявке</h3><p class="mb-0 text-muted">Откройте описание или быструю заявку: нужная модель будет выбрана автоматически.</p></div></div>
     </div>
-
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Адаптивность</h3>
-        <p class="mb-0 text-muted">
-          Колонки меняют ширину в зависимости от размера экрана.
-        </p>
+  </section>
+  <section class="container my-5" id="popular">
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4"><h2 class="mb-0">Популярные товары</h2><a class="btn btn-outline-primary" href="catalog.html">Все товары</a></div>
+    <div class="row g-4">      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Клавиатура Compact</h3><span class="badge bg-success">Новинка</span></div>
+            <p class="card-text text-muted">Компактная клавиатура для небольшого рабочего стола.</p>
+            <p class="fw-bold fs-5 mt-auto">2 490 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=keyboard-compact">Подробнее<span class="visually-hidden">: Клавиатура Compact</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="keyboard-compact">Заказать<span class="visually-hidden">: Клавиатура Compact</span></button>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-
-    <div class="col-12 col-md-4">
-      <div class="p-4 border rounded h-100 bg-white">
-        <h3 class="h5">Готовая база</h3>
-        <p class="mb-0 text-muted">
-          Проект подготовлен к добавлению карточек, форм и модальных окон.
-        </p>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Мышь Wireless</h3><span class="badge bg-warning text-dark">Хит</span></div>
+            <p class="card-text text-muted">Беспроводная мышь для ноутбука и повседневных задач.</p>
+            <p class="fw-bold fs-5 mt-auto">1 490 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=mouse-wireless">Подробнее<span class="visually-hidden">: Мышь Wireless</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="mouse-wireless">Заказать<span class="visually-hidden">: Мышь Wireless</span></button>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-  </div>
-</section>
-<section class="container my-5" id="popular">
-  <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
-    <h2 class="mb-0">Популярные товары</h2>
-    <a class="btn btn-outline-primary" href="catalog.html">
-      Все товары
-    </a>
-  </div>
-
-  <div class="row g-4">
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-success mb-3">Новинка</span>
-        <h3 class="h5">Товар 1</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">1000 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-warning text-dark mb-3">Хит</span>
-        <h3 class="h5">Товар 2</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">1500 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="border rounded h-100 p-4">
-        <span class="badge bg-danger mb-3">Скидка</span>
-        <h3 class="h5">Товар 3</h3>
-        <p class="text-muted">
-          Краткое описание учебного товара.
-        </p>
-        <p class="fw-bold mb-3">2000 руб.</p>
-        <a class="btn btn-primary" href="product.html">
-          Подробнее
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Наушники Wired</h3><span class="badge bg-secondary">Для учёбы</span></div>
+            <p class="card-text text-muted">Проводная гарнитура с микрофоном для онлайн-занятий.</p>
+            <p class="fw-bold fs-5 mt-auto">1 990 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=headphones-wired">Подробнее<span class="visually-hidden">: Наушники Wired</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="headphones-wired">Заказать<span class="visually-hidden">: Наушники Wired</span></button>
+            </div>
+          </div>
+        </article>
+      </div></div>
+  </section>
 </main>
-<footer class="bg-dark text-white py-4 mt-5">
-  <div class="container">
-    <div class="row align-items-center g-3">
-      <div class="col-12 col-md-6">
-        <p class="mb-0">
-          &copy; 2026 Bootstrap Shop. Учебный проект.
-        </p>
-      </div>
-
-      <div class="col-12 col-md-6 text-md-end">
-        <a class="text-white text-decoration-none me-3" href="catalog.html">
-          Каталог
-        </a>
-        <a class="text-white text-decoration-none" href="order.html">
-          Заявка
-        </a>
-      </div>
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title h5" id="orderModalLabel">Быстрая заявка</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
+    <div class="modal-body">
+      <p class="text-muted">Выберите модель и укажите контактные данные. Онлайн-отправка временно недоступна.</p>
+      <form id="quick-order-form" onsubmit="return false;">
+        <div class="mb-3"><label for="modal-product" class="form-label">Товар</label><select id="modal-product" name="product" class="form-select" required><optgroup label="Клавиатуры"><option value="keyboard-compact">Клавиатура Compact — 2 490 руб.</option><option value="keyboard-classic">Клавиатура Classic — 1 990 руб.</option><option value="keyboard-pro">Клавиатура Pro — 5 490 руб.</option></optgroup><optgroup label="Мыши"><option value="mouse-wireless">Мышь Wireless — 1 490 руб.</option><option value="mouse-silent">Мышь Silent — 1 190 руб.</option><option value="mouse-gaming">Мышь Gaming — 2 990 руб.</option></optgroup><optgroup label="Наушники"><option value="headphones-wired">Наушники Wired — 1 990 руб.</option><option value="headphones-wireless">Наушники Wireless — 3 990 руб.</option><option value="headphones-studio">Наушники Studio — 5 990 руб.</option></optgroup></select></div>
+        <div class="mb-3"><label for="modal-name" class="form-label">Имя</label><input id="modal-name" name="name" type="text" class="form-control" autocomplete="given-name" required></div>
+        <div class="mb-3"><label for="modal-phone" class="form-label">Телефон</label><input id="modal-phone" name="phone" type="tel" class="form-control" autocomplete="tel" required></div>
+        <div class="form-check mb-3"><input id="modal-agree" name="agree" class="form-check-input" type="checkbox" required><label class="form-check-label" for="modal-agree">Согласен на обработку данных</label></div>
+      </form>
+      <a id="modal-full-order" class="d-inline-block mt-2" href="order.html?product=keyboard-compact">Перейти к полной форме заявки</a>
     </div>
-  </div>
+    <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button><button type="submit" form="quick-order-form" class="btn btn-primary">Отправить</button></div>
+  </div></div>
+</div>
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container"><div class="row align-items-center g-3">
+    <div class="col-12 col-md-5"><p class="mb-0">&copy; 2026 Периферия. Компьютерные аксессуары.</p></div>
+    <div class="col-12 col-md-7"><div class="d-flex flex-wrap justify-content-md-end gap-3"><a class="text-white" href="catalog.html">Каталог</a><a class="text-white" href="order.html">Заявка</a><a class="text-white" href="contacts.html">Доставка и контакты</a></div></div>
+  </div></div>
 </footer>
-
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/shop.js"></script>
 </body>
 </html>
