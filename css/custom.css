@@ -1,7 +1,87 @@
+:root {
+  --bs-primary: #176b63;
+  --bs-primary-rgb: 23, 107, 99;
+  --bs-dark-rgb: 23, 51, 47;
+  --bs-light-rgb: 244, 248, 247;
+  --bs-body-bg: #f4f8f7;
+  --bs-body-color: #213b36;
+  --bs-link-color: #176b63;
+  --bs-link-color-rgb: 23, 107, 99;
+  --bs-link-hover-color: #11534d;
+  --bs-link-hover-color-rgb: 17, 83, 77;
+}
+
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .placeholder-box {
   min-height: 240px;
+}
+
+.placeholder-image {
+  min-height: 320px;
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* У компонентов Bootstrap собственные переменные состояний кнопок. */
+.btn-primary {
+  --bs-btn-bg: #176b63;
+  --bs-btn-border-color: #176b63;
+  --bs-btn-hover-bg: #11534d;
+  --bs-btn-hover-border-color: #11534d;
+  --bs-btn-active-bg: #0d433e;
+  --bs-btn-active-border-color: #0d433e;
+  --bs-btn-disabled-bg: #176b63;
+  --bs-btn-disabled-border-color: #176b63;
+  --bs-btn-focus-shadow-rgb: 23, 107, 99;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #176b63;
+  --bs-btn-border-color: #176b63;
+  --bs-btn-hover-bg: #176b63;
+  --bs-btn-hover-border-color: #176b63;
+  --bs-btn-active-bg: #11534d;
+  --bs-btn-active-border-color: #11534d;
+  --bs-btn-disabled-color: #176b63;
+  --bs-btn-disabled-border-color: #176b63;
+  --bs-btn-focus-shadow-rgb: 23, 107, 99;
+}
+
+.nav-tabs {
+  --bs-nav-tabs-link-active-color: #176b63;
+  --bs-nav-tabs-link-active-bg: #fff;
+}
+
+.accordion {
+  --bs-accordion-active-color: #11534d;
+  --bs-accordion-active-bg: #e3f1ed;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(23, 107, 99, 0.2);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6aa99e;
+  box-shadow: 0 0 0 0.25rem rgba(23, 107, 99, 0.2);
+}
+
+.form-check-input:checked {
+  background-color: #176b63;
+  border-color: #176b63;
+}
+
+.form-check-input:focus {
+  border-color: #6aa99e;
+  box-shadow: 0 0 0 0.25rem rgba(23, 107, 99, 0.2);
 }

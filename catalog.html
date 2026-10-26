@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — Периферия</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Основная навигация">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Периферия</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Каталог</a></li>
+        <li class="nav-item"><a class="nav-link" href="product.html">Товар</a></li>
+        <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacts.html">Доставка и контакты</a></li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Дополнительно</button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="catalog.html">Каталог товаров</a></li>
+            <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+            <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container my-5">
+  <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4"><div><h1 class="h2 mb-1">Каталог товаров</h1><p class="text-muted mb-0">9 моделей · 3 категории</p></div><a class="btn btn-outline-primary" href="order.html">Оставить заявку</a></div>
+  <div class="alert alert-info" role="alert">Выберите категорию, сравните модели и откройте подробные характеристики понравившегося товара.</div>
+  <ul class="nav nav-tabs mb-4" id="categoryTabs" role="tablist" aria-label="Категории товаров">
+    <li class="nav-item" role="presentation"><button class="nav-link active" id="keyboards-tab" data-bs-toggle="tab" data-bs-target="#keyboards-pane" type="button" role="tab" aria-controls="keyboards-pane" aria-selected="true">Клавиатуры <span class="badge text-bg-light ms-1">3</span></button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link" id="mice-tab" data-bs-toggle="tab" data-bs-target="#mice-pane" type="button" role="tab" aria-controls="mice-pane" aria-selected="false">Мыши <span class="badge text-bg-light ms-1">3</span></button></li>
+    <li class="nav-item" role="presentation"><button class="nav-link" id="headphones-tab" data-bs-toggle="tab" data-bs-target="#headphones-pane" type="button" role="tab" aria-controls="headphones-pane" aria-selected="false">Наушники <span class="badge text-bg-light ms-1">3</span></button></li>
+  </ul>
+  <div class="tab-content" id="categoryContent">
+    <section class="tab-pane fade show active" id="keyboards-pane" role="tabpanel" aria-labelledby="keyboards-tab" tabindex="0">
+      <h2 class="h4 mb-3">Клавиатуры</h2>
+      <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Клавиатура Compact</h3><span class="badge bg-success">Новинка</span></div>
+            <p class="card-text text-muted">Компактная клавиатура для небольшого рабочего стола.</p>
+            <p class="fw-bold fs-5 mt-auto">2 490 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=keyboard-compact">Подробнее<span class="visually-hidden">: Клавиатура Compact</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="keyboard-compact">Заказать<span class="visually-hidden">: Клавиатура Compact</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Клавиатура Classic</h3><span class="badge bg-warning text-dark">Хит</span></div>
+            <p class="card-text text-muted">Полноразмерная модель с отдельным цифровым блоком.</p>
+            <p class="fw-bold fs-5 mt-auto">1 990 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=keyboard-classic">Подробнее<span class="visually-hidden">: Клавиатура Classic</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="keyboard-classic">Заказать<span class="visually-hidden">: Клавиатура Classic</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Клавиатура Pro</h3><span class="badge bg-secondary">Для работы</span></div>
+            <p class="card-text text-muted">Механическая модель с подсветкой и съёмным кабелем.</p>
+            <p class="fw-bold fs-5 mt-auto">5 490 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=keyboard-pro">Подробнее<span class="visually-hidden">: Клавиатура Pro</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="keyboard-pro">Заказать<span class="visually-hidden">: Клавиатура Pro</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+    <section class="tab-pane fade" id="mice-pane" role="tabpanel" aria-labelledby="mice-tab" tabindex="0">
+      <h2 class="h4 mb-3">Мыши</h2>
+      <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Мышь Wireless</h3><span class="badge bg-warning text-dark">Хит</span></div>
+            <p class="card-text text-muted">Беспроводная мышь для ноутбука и повседневных задач.</p>
+            <p class="fw-bold fs-5 mt-auto">1 490 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=mouse-wireless">Подробнее<span class="visually-hidden">: Мышь Wireless</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="mouse-wireless">Заказать<span class="visually-hidden">: Мышь Wireless</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Мышь Silent</h3><span class="badge bg-success">Новинка</span></div>
+            <p class="card-text text-muted">Тихие кнопки для занятий в библиотеке или дома.</p>
+            <p class="fw-bold fs-5 mt-auto">1 190 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=mouse-silent">Подробнее<span class="visually-hidden">: Мышь Silent</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="mouse-silent">Заказать<span class="visually-hidden">: Мышь Silent</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Мышь Gaming</h3><span class="badge bg-danger">Скидка</span></div>
+            <p class="card-text text-muted">Настраиваемая чувствительность и дополнительные кнопки.</p>
+            <p class="fw-bold fs-5 mt-auto">2 990 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=mouse-gaming">Подробнее<span class="visually-hidden">: Мышь Gaming</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="mouse-gaming">Заказать<span class="visually-hidden">: Мышь Gaming</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+    <section class="tab-pane fade" id="headphones-pane" role="tabpanel" aria-labelledby="headphones-tab" tabindex="0">
+      <h2 class="h4 mb-3">Наушники</h2>
+      <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Наушники Wired</h3><span class="badge bg-secondary">Для учёбы</span></div>
+            <p class="card-text text-muted">Проводная гарнитура с микрофоном для онлайн-занятий.</p>
+            <p class="fw-bold fs-5 mt-auto">1 990 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=headphones-wired">Подробнее<span class="visually-hidden">: Наушники Wired</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="headphones-wired">Заказать<span class="visually-hidden">: Наушники Wired</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Наушники Wireless</h3><span class="badge bg-success">Новинка</span></div>
+            <p class="card-text text-muted">Беспроводная модель со складной конструкцией.</p>
+            <p class="fw-bold fs-5 mt-auto">3 990 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=headphones-wireless">Подробнее<span class="visually-hidden">: Наушники Wireless</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="headphones-wireless">Заказать<span class="visually-hidden">: Наушники Wireless</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <article class="card h-100 shadow-sm">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-3"><h3 class="card-title h5 mb-0">Наушники Studio</h3><span class="badge bg-secondary">Для музыки</span></div>
+            <p class="card-text text-muted">Полноразмерные наушники со съёмным кабелем.</p>
+            <p class="fw-bold fs-5 mt-auto">5 990 руб.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-primary" href="product.html?product=headphones-studio">Подробнее<span class="visually-hidden">: Наушники Studio</span></a>
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#orderModal" data-product="headphones-studio">Заказать<span class="visually-hidden">: Наушники Studio</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+      </div>
+    </section>
+  </div>
+</main>
+<div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"><div class="modal-content">
+    <div class="modal-header"><h2 class="modal-title h5" id="orderModalLabel">Быстрая заявка</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
+    <div class="modal-body">
+      <p class="text-muted">Выберите модель и укажите контактные данные. Онлайн-отправка временно недоступна.</p>
+      <form id="quick-order-form" onsubmit="return false;">
+        <div class="mb-3"><label for="modal-product" class="form-label">Товар</label><select id="modal-product" name="product" class="form-select" required><optgroup label="Клавиатуры"><option value="keyboard-compact">Клавиатура Compact — 2 490 руб.</option><option value="keyboard-classic">Клавиатура Classic — 1 990 руб.</option><option value="keyboard-pro">Клавиатура Pro — 5 490 руб.</option></optgroup><optgroup label="Мыши"><option value="mouse-wireless">Мышь Wireless — 1 490 руб.</option><option value="mouse-silent">Мышь Silent — 1 190 руб.</option><option value="mouse-gaming">Мышь Gaming — 2 990 руб.</option></optgroup><optgroup label="Наушники"><option value="headphones-wired">Наушники Wired — 1 990 руб.</option><option value="headphones-wireless">Наушники Wireless — 3 990 руб.</option><option value="headphones-studio">Наушники Studio — 5 990 руб.</option></optgroup></select></div>
+        <div class="mb-3"><label for="modal-name" class="form-label">Имя</label><input id="modal-name" name="name" type="text" class="form-control" autocomplete="given-name" required></div>
+        <div class="mb-3"><label for="modal-phone" class="form-label">Телефон</label><input id="modal-phone" name="phone" type="tel" class="form-control" autocomplete="tel" required></div>
+        <div class="form-check mb-3"><input id="modal-agree" name="agree" class="form-check-input" type="checkbox" required><label class="form-check-label" for="modal-agree">Согласен на обработку данных</label></div>
+      </form>
+      <a id="modal-full-order" class="d-inline-block mt-2" href="order.html?product=keyboard-compact">Перейти к полной форме заявки</a>
+    </div>
+    <div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button><button type="submit" form="quick-order-form" class="btn btn-primary">Отправить</button></div>
+  </div></div>
+</div>
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container"><div class="row align-items-center g-3">
+    <div class="col-12 col-md-5"><p class="mb-0">&copy; 2026 Периферия. Компьютерные аксессуары.</p></div>
+    <div class="col-12 col-md-7"><div class="d-flex flex-wrap justify-content-md-end gap-3"><a class="text-white" href="catalog.html">Каталог</a><a class="text-white" href="order.html">Заявка</a><a class="text-white" href="contacts.html">Доставка и контакты</a></div></div>
+  </div></div>
+</footer>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
